@@ -1,55 +1,109 @@
 body{
-    padding-top: 100px;
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-rows: 1fr 1fr 100px;
-    grid-template-columns: repeat(5,1fr);
+    background-color: #0c0c0c;
 }
 
-header{
-    grid-column: 2/5;
-    text-align: center;
-    padding-top: 0rem;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 4rem;
-    color: rgb(183, 183, 183);
-    text-shadow: 0 0 9px #FF0000, 0 0 12px #0000FF;
+.center {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 50%;
+    transform: translateY(-90px);
 }
 
 .backButtonHome{
-    grid-column: 3;
-    grid-row: 4;
-    background-color: rgb(195, 195, 195);
+    background-color: #960000;
     text-align: center;
-    color: rgb(134, 30, 30);
-    font-size: 5rem;
+    color: aliceblue;
+    font-size: 2.5rem;
     border-radius: 2rem;
-    box-shadow: 0 0 12px #FF0000, 0 0 17px #0000FF;
-    transform: translateY(-60px);
+    box-shadow: 0 0 7px aliceblue;
+    padding: 10px;
+    transition: all .4s ease;
 }
 
+.backButtonHome:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: #0c0c0c;
+    box-shadow: 0px 2px 7px aliceblue;
+    transform: translateY(-10px);
+}
 
 .quotebtn{
-    grid-column: 3;
-    grid-row: 1;
-    background-color: rgb(195, 195, 195);
+    background-color: #960000;
     text-align: center;
-    color: rgb(134, 30, 30);
-    font-size: 5rem;
+    color: aliceblue;
+    font-size: 2.5rem;
     border-radius: 2rem;
-    box-shadow: 0 0 12px #FF0000, 0 0 17px #0000FF;
+    box-shadow: 0 0 7px aliceblue;
+    padding: 10px;
+    transition: all .4s ease;
+}
+
+.quotebtn:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: #0c0c0c;
+    box-shadow: 0px 2px 7px aliceblue;
+    transform: translateY(-10px);
 }
 
 .quote {
-    grid-column: 2/4;
-    grid-row: 2;
-    font-size: 30px;
+    font-size: 70px;
     letter-spacing: 1px;
-    line-height: 40px;
-    transform: translateX(125px);
-    padding-top: 20px;
-    max-width: 600px;
-    color: rgb(255, 255, 255);
-    z-index: 1;
+    padding: 10px 10px 70px;
+    width: 1000px;
+    height: 300px;
+    color: aliceblue;
     text-align: center;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
 }
+
+@media only screen and (max-width: 1100px) {
+    .quote {
+        font-size: 40px;
+        width: 550px;
+        height: 200px;
+    }
+    .backButtonHome {
+        font-size: 30px;
+        padding: 10px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+    .quotebtn {
+        font-size: 30px;
+        padding: 10px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        font-size: 25px;
+        width: 450px;
+        height: 125px;
+    }
+    .backButtonHome {
+        font-size: 25px;
+        padding: 5px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+    .quotebtn {
+        font-size: 25px;
+        padding: 5px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+  }
