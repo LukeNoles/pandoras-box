@@ -1,0 +1,109 @@
+body{
+    background-color: #0c0c0c;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 50%;
+    transform: translateY(-90px);
+}
+
+.backButtonHome{
+    background-color: #960000;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 7px aliceblue;
+    padding: 10px;
+    transition: all .4s ease;
+}
+
+.backButtonHome:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: #0c0c0c;
+    box-shadow: 0px 2px 7px aliceblue;
+    transform: translateY(-10px);
+}
+
+.dadButton{
+    background-color: #960000;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 7px aliceblue;
+    padding: 10px;
+    transition: all .4s ease;
+}
+
+.dadButton:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: #0c0c0c;
+    box-shadow: 0px 2px 7px aliceblue;
+    transform: translateY(-10px);
+}
+
+.joke {
+    font-size: 70px;
+    letter-spacing: 1px;
+    padding: 10px 10px 70px;
+    width: 1000px;
+    height: 350px;
+    color: aliceblue;
+    text-align: center;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .joke {
+        font-size: 40px;
+        width: 550px;
+        height: 200px;
+    }
+    .backButtonHome {
+        font-size: 30px;
+        padding: 10px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+    .dadButton {
+        font-size: 30px;
+        padding: 10px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .joke {
+        font-size: 25px;
+        width: 450px;
+        height: 125px;
+    }
+    .backButtonHome {
+        font-size: 25px;
+        padding: 5px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+    .dadButton {
+        font-size: 25px;
+        padding: 5px;
+        transform: translateY(-3px);
+        margin: 40px;
+    }
+  }
